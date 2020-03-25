@@ -20,5 +20,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",views.index,name="index"),
-    path("apsearch",views.App_searcher,name='apps'),
+    path("app_search",views.app_searcher,name='apps'),
+    path('key_finder',views.keyword_finder,name='keyfinder')
 ]
