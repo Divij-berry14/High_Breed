@@ -1,0 +1,55 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>App Searcher Form</title>#}
+{#</head>#}
+{#<body>#}
+{##}
+{#<h1>Welcome to the App Searcher Form section</h1>#}
+{#<h2>The select Element</h2>#}
+{##}
+{#<p>The select element defines a drop-down list:</p>#}
+{##}
+{#<form action="/action_page.php">#}
+{#  <label for="cars">Choose an option:</label>#}
+{#  <select id="cars" name="cars">#}
+{#    <option value="Google Play">Google Play</option>#}
+{#    <option value="Apple">Apple</option>#}
+{#  </select>#}
+{#    <br>#}
+{#    <input type="text" name="txtprice" id="txtprice" onClick="checkPrice()">#}
+{#<script>#}
+{#    function checkPrice() {#}
+{##}
+{#    }#}
+{#</script>#}
+{#  <input type="submit">#}
+{#</form>#}
+{##}
+{#</body>#}
+{#</html>#}
+
+<html>
+<head>
+<script type="text/javascript">
+function CheckColors(val){
+ var element=document.getElementById('color');
+ if(val=='pick a color'||val=='others')
+   element.style.display='block';
+ else
+   element.style.display='none';
+}
+
+</script>
+</head>
+<body>
+  <select name="color" onchange='CheckColors(this.value);'>
+    <option>pick a color</option>
+    <option value="red">RED</option>
+    <option value="blue">BLUE</option>
+    <option value="others">others</option>
+  </select>
+<input type="text" name="color" id="color" style='display:none;'/>
+</body>
+</html>
