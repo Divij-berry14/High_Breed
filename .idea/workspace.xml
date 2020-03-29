@@ -4,7 +4,6 @@
     <list default="true" id="a448fb37-eeac-46a0-8283-73c8fca73c2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App_Searcher/templates/App_Searcher/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/App_Searcher/templates/App_Searcher/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App_Searcher/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/App_Searcher/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +96,7 @@
       <workItem from="1585144806821" duration="3416000" />
       <workItem from="1585199664854" duration="5455000" />
       <workItem from="1585414569442" duration="7198000" />
-      <workItem from="1585504757422" duration="8200000" />
+      <workItem from="1585504757422" duration="8964000" />
     </task>
     <servers />
   </component>
