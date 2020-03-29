@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>App Searcher Form</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript">
-        function CheckOption(val){
+             function CheckOption(val){
             var element=document.getElementById('google');
             var element1=document.getElementById('apple');
             var element2=document.getElementById('apple1');
@@ -24,7 +26,22 @@
                 element2.style.display = 'none';
             }
 }
+
+
+
     </script>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid black;
+  text-align: left;
+}
+</style>
 </head>
 <body>
 
@@ -43,6 +60,127 @@
 <input type="text" name="iphone" id="apple" style='display:none;' placeholder="App Name"/>
 <input type="text" name="iphone" id="apple1" style='display:none;' placeholder="Application Id"/>
 <br>
+<br>
 <button type="submit" name="btn" id="btn">Get Info</button>
+
+<br>
+<br>
+<div id = "text">Default List Name</div>
+<button id = "button1">Button1</button>
+    <button id = "button2">Button2</button>
+    <table  id = "mytable1" border = "1">
+    	<tr>
+    		<td>text1</td>
+    		<td>text1</td>
+    		<td>text1</td>
+    	</tr>
+    	<tr>
+    		<td>text2</td>
+    		<td>text2</td>
+    		<td>text2</td>
+    	</tr>
+    	<tr>
+    		<td>text3</td>
+    		<td>text3</td>
+    		<td>text3</td>
+    	</tr>
+    	<tr>
+    		<td>text4</td>
+    		<td>text4</td>
+    		<td>text4</td>
+    	</tr>
+    </table>
+ <br/>
+    <table id = "mytable2" border = "1" style="">
+    	<tr>
+    		<td>box1</td>
+    		<td>box1</td>
+    		<td>box1</td>
+    	</tr>
+    	<tr>
+    		<td>box2</td>
+    		<td>box2</td>
+    		<td>box2</td>
+    	</tr>
+    	<tr>
+    		<td>box3</td>
+    		<td>box3</td>
+    		<td>box3</td>
+    	</tr>
+    	<tr>
+    		<td>box4</td>
+    		<td>box4</td>
+    		<td>box4</td>
+    	</tr>
+    </table>
+<script type="text/javascript">
+     $(document).ready(function(){
+  $("#mytable1").show();
+     	$("#mytable2").hide();
+
+     	$("#button1").click(function(){
+            $("#text").html("Default List Name");
+     		$("#mytable2").hide();
+     		$("#mytable1").show();
+
+     	});
+
+     	$("#button2").click(function(){
+     		$("#mytable1").hide();
+     		$("#mytable2").show();
+            $("#text").html("Second List Name");
+     	});
+});
+</script>
+<br>
+<table style="border-collapse: collapse; empty-cells: show;border-color: black">
+    <tr>
+        <td style="height: 11.3em; padding: 4px 6px;"></td>
+        <td style="height: 1.3em; padding: 4px 6px;"></td>
+    </tr>
+</table>
+<br>
+<br>
+
+<div id = "text">Default List Name</div>
+<button id = "button3">Button1</button>
+    <button id = "button4">Button2</button>
+    <table  id = "mytable3" border = "1">
+    	<tr>
+    		<td style="height: 11.3em; padding: 4px 6px;"></td>
+    		<td style="height: 11.3em; padding: 4px 6px;"></td>
+    	</tr>
+    </table>
+ <br/>
+    <table id = "mytable4" border = "1" style="">
+    	<tr>
+    		<td style="height: 11.3em; padding: 4px 6px;"></td>
+{#    		<td style="height: 11.3em; padding: 4px 6px;" ></td>#}
+    	</tr>
+    </table>
+<script type="text/javascript">
+     $(document).ready(function(){
+  $("#mytable3").show();
+     	$("#mytable4").hide();
+
+     	$("#button3").click(function(){
+            $("#text").html("Default List Name");
+     		$("#mytable4").hide();
+     		$("#mytable3").show();
+
+     	});
+
+     	$("#button4").click(function(){
+     		$("#mytable3").hide();
+     		$("#mytable4").show();
+            $("#text").html("Second List Name");
+     	});
+});
+</script>
 </body>
 </html>
+<html>
+<head>
+
+
+
