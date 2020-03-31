@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a448fb37-eeac-46a0-8283-73c8fca73c2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webscraping.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App_Searcher/templates/App_Searcher/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/App_Searcher/templates/App_Searcher/form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +14,14 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="High_Breed_Assignment" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -96,7 +100,8 @@
       <workItem from="1585144806821" duration="3416000" />
       <workItem from="1585199664854" duration="5455000" />
       <workItem from="1585414569442" duration="7198000" />
-      <workItem from="1585504757422" duration="8964000" />
+      <workItem from="1585504757422" duration="9611000" />
+      <workItem from="1585572502616" duration="10815000" />
     </task>
     <servers />
   </component>
@@ -112,9 +117,9 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="184" y="11" key="SettingsEditor/0.0.1366.736@0.0.1366.736" timestamp="1585056006966" />
-    <state x="379" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1585199898223">
+    <state x="379" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1585572634104">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="379" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1585199898223" />
+    <state x="379" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1585572634104" />
   </component>
 </project>
