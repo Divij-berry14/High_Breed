@@ -19,7 +19,7 @@ def app_searcher(request):
     # print(soup)
     title = soup.title
     print_title = title.string
-    print(title.string)
+    # print(title.string)
     # print(type(title))
     paras = soup.find("meta", itemprop='description')
     # print(type(paras))
@@ -28,14 +28,14 @@ def app_searcher(request):
     # print(paras["content"])
     rating = soup.find("div", class_="BHMmbe")
     print_rating = rating.string
-    print(rating.string)
+    # print(rating.string)
     downloads = soup.find("span", class_="AYi5wd TBRnV")
     print_downloads = downloads.text
-    print(downloads.text)
+    # print(downloads.text)
     developer_name = soup.find("a", class_="hrTbp R8zArc")
     print_developer_name = developer_name.text
-    print(developer_name.text)
-    print("Reviews")
+    # print(developer_name.text)
+    # print("Reviews")
     result = reviews(
         'com.fantome.penguinisle',
         lang='en',  # defaults to 'en'
@@ -45,8 +45,8 @@ def app_searcher(request):
         filter_score_with=5  # defaults to None(means all score)
     )
     print_result = ''.join(d['content'] for d in result)
-    print(print_result)
-    print(result)
+    # print(print_result)
+    # print(result)
     # print_result="".join(result)
     # print(print_result)
     myfile.write(print_title)
@@ -57,12 +57,15 @@ def app_searcher(request):
     myfile.write(print_des)
     myfile.close()
 
-    # myfile=open("3.txt","r")
-    # content=myfile.read()
-    # myfile.close()
-    d = {}
-    with open("3.txt") as f:
-        for line in f:
-            (key, val) = line.split()
-            d[int(key)] = val
+    myfile=open("3.txt","r")
+    content=myfile.read()
+    myfile.close()
+    # d = {}
+    # with open("3.txt") as f:
+    #     for line in f:
+    #         (key, val) = line.split()
+    #         d[int(key)] = val
+    d={}
+    d['1']=content
+    print(d)
     return render(request,'App_Searcher/form.html',d)

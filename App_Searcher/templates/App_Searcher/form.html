@@ -44,12 +44,12 @@ td, th {
 </style>
 </head>
 <body>
-
 <h1>Welcome to the App Searcher Form section</h1>
 <h2>The select Element</h2>
 
 <p>The select element defines a drop-down list:</p>
-
+<form method="post">
+    {% csrf_token %}
    <select name="color" onchange='CheckOption(this.value);'>
     <option>Pick an Option</option>
     <option value="Google">Google Play Store</option>
@@ -61,6 +61,7 @@ td, th {
 <input type="text" name="iphone" id="apple1" style='display:none;' placeholder="Application Id"/>
 <br>
 <button type="submit" name="btn" id="btn">Get Info</button>
+</form>
 
 <br>
 <br>
@@ -176,16 +177,22 @@ td, th {
      	});
 });
 </script>
-<p>
-{#    {{text}}#}
+{#<p>#}
 {#    {% for key, value in d.items %}#}
-{#    {{key}} - {{value}}#}
+{#    {{key}}#}
+{#        {{value}}#}
 {#{% endfor %}#}
-    {% for val in d%}
-{val}
+{#    {% for val in d %}#}
+{#{val}#}
+{#{% endfor %}#}
+{##}
+{#</p>#}
+<h1>hi!</h1>
+{% for key, value in d.items %}
+     {{value}}
 {% endfor %}
 
-</p>
+
 </body>
 </html>
 <html>
