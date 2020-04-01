@@ -56,8 +56,9 @@ td, th {
     <option value="Apple">Apple User</option>
   </select>
 
-<input type="url" name="goo" id="google" style='display:none;' pattern="https://.*"  placeholder="https://example.com"/>
-<input type="text" name="iphone" id="apple" style='display:none;' placeholder="App Name"/>
+{#<input type="url" name="goo" id="google" style='display:none;' pattern="https://.*"  placeholder="https://example.com"/>#}
+    <input type="text" name="goo" id="google" style='display:none;' placeholder="https://example.com"/>
+    <input type="text" name="iphone" id="apple" style='display:none;' placeholder="App Name"/>
 <input type="text" name="iphone" id="apple1" style='display:none;' placeholder="Application Id"/>
 <br>
 <button type="submit" name="btn" id="btn">Get Info</button>
@@ -188,15 +189,14 @@ td, th {
 {##}
 {#</p>#}
 <h1>hi!</h1>
-{% for key, value in d.items %}
-     {{value}}
-{% endfor %}
-
-
+{#{% for key, value in d.items %}#}
+{#    {{key}}#}
+{#     {{value}}#}
+{#{% endfor %}#}
+{{ mytext }}
 </body>
 </html>
-<html>
-<head>
+
 
 
 

@@ -8,11 +8,12 @@ from google_play_scraper import Sort, reviews
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import lxml
-import re
+from django.template.response import TemplateResponse
 
 def app_searcher(request):
-    myfile = open("3.txt", "w")
+    myfile = open("4.txt", "w")
     url = "https://play.google.com/store/apps/details?id=com.appxplore.voidtroopers&hl=en_IN"
+    # url= request.GET.get('goo')
     r = requests.get(url)
     htmlcontent = r.content
     soup = BeautifulSoup(htmlcontent, 'html.parser')
@@ -66,6 +67,7 @@ def app_searcher(request):
     #         (key, val) = line.split()
     #         d[int(key)] = val
     d={}
-    d['1']=content
-    print(d)
-    return render(request,'App_Searcher/form.html',d)
+    d['mytext']=content
+    # print(d['mytext'])
+    # return render(request,'App_Searcher/form.html',d)
+    return TemplateResponse(request,'App_Searcher/form.html',d)
