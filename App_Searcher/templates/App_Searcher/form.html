@@ -176,6 +176,16 @@ td, th {
      	});
 });
 </script>
+<p>
+{#    {{text}}#}
+{#    {% for key, value in d.items %}#}
+{#    {{key}} - {{value}}#}
+{#{% endfor %}#}
+    {% for val in d%}
+{val}
+{% endfor %}
+
+</p>
 </body>
 </html>
 <html>
