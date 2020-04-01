@@ -4,17 +4,19 @@ import urllib
 import requests
 from google_play_scraper import app
 from google_play_scraper import Sort, reviews
-# import play_scraper
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import lxml
 from django.template.response import TemplateResponse
+import os
 
 def app_searcher(request):
-    myfile = open("4.txt", "w")
-    url = "https://play.google.com/store/apps/details?id=com.appxplore.voidtroopers&hl=en_IN"
-    # url= request.GET.get('goo')
+    myfile = open("1.txt", "w",encoding='utf-8')
+    url = "https://play.google.com/store/apps/details?id=com.sixhoursoft.android.spacecadetdefenderhd"
+    # url= request.POST.get('goo')
+    print(url)
     r = requests.get(url)
+    print(r)
     htmlcontent = r.content
     soup = BeautifulSoup(htmlcontent, 'html.parser')
     # print(soup)
@@ -51,23 +53,26 @@ def app_searcher(request):
     # print_result="".join(result)
     # print(print_result)
     myfile.write(print_title)
+    myfile.write("\n")
     myfile.write(print_rating)
-    myfile.write(print_result)
+    myfile.write("\n")
     myfile.write(print_developer_name)
+    myfile.write("\n")
     myfile.write(print_downloads)
+    myfile.write("\n")
     myfile.write(print_des)
+    myfile.write("\n")
+    myfile.write(print_result)
+    myfile.write("\n")
     myfile.close()
 
-    myfile=open("3.txt","r")
+    myfile=open("1.txt","r",encoding='utf-8')
     content=myfile.read()
     myfile.close()
-    # d = {}
-    # with open("3.txt") as f:
-    #     for line in f:
-    #         (key, val) = line.split()
-    #         d[int(key)] = val
+    os.remove("1.txt")
     d={}
     d['mytext']=content
+    d['mytext1']=print_title
     # print(d['mytext'])
     # return render(request,'App_Searcher/form.html',d)
     return TemplateResponse(request,'App_Searcher/form.html',d)
